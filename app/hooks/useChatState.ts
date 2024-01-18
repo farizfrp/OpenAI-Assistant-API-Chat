@@ -13,7 +13,7 @@ export const useChatState = () => {
   
   
   const [assistantName, setAssistantName] = useState('');
-  const [assistantModel, setAssistantModel] = useState('gpt-3.5-turbo-1106');
+  const [assistantModel, setAssistantModel] = useState('gpt-3.5-turbo-16k');
   const [assistantDescription, setAssistantDescription] = useState('');
   const [inputmessage, setInputmessage] = useState('');
   const [chatMessages, setChatMessages] = useState<{ role: string; content: any; }[]>([]);
@@ -23,7 +23,7 @@ export const useChatState = () => {
   const [threadId, setThreadId] = useState<string | null>(null);
   const [isStartLoading, setStartLoading] = useState(false);
   const [isSending, setIsSending] = useState(false);
-  const [initialThreadMessage, setInitialThreadMessage] = useState('You are a Pirate! introduce yourself');
+  const [initialThreadMessage, setInitialThreadMessage] = useState('Halo Fariz, Apa yang bisa saya bantu ?');
   const [statusMessage, setStatusMessage] = useState('');
   const counter = useRef(0);
   const inputRef = useRef(null);

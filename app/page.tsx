@@ -36,6 +36,7 @@ export default function Chat() {
 
   useChatManager(setChatMessages, setStatusMessage, setChatManager, setIsMessageLoading, setProgress, setIsLoadingFirstMessage);
   useStartAssistant(assistantId, chatManager, initialThreadMessage);
+  console.log('ASSISTANT ID',process.env.REACT_APP_ASSISTANT_ID)
 
   const startChatAssistant = async () => {
     setIsButtonDisabled(true);
